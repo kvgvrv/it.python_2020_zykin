@@ -28,7 +28,8 @@ def eye(l):
     tr.right(90)
     tr.forward(l)
     tr.left(45)
-        
+    
+tr.width(5)       
 tr.begin_fill()
 tr.color('black', 'yellow')
 circle_right(120)
@@ -67,5 +68,4 @@ tr.pendown()
 tr.begin_fill()
 circle_right(10)
 tr.end_fill()
-
 
