@@ -1,18 +1,18 @@
-import turtle as t 
+import turtle as tr 
 
-def mnog(n,R):
+def circle(n,R):
     for i in range(1,n+1):
-        t.pendown()
-        t.forward(R*3**0.5)
-        t.left(360/n)
-    t.right(90+180/n)
-    t.penup()
-    t.forward(15)
-    t.left(90+180/(n+1))
+        tr.pendown()
+        tr.forward(R*3**0.5)
+        tr.left(360/n)
+    tr.right(90+180/n)
+    tr.penup()
+    tr.forward(15)
+    tr.left(90+180/(n+1))
 n = 10
-t.shape('turtle')
-t.speed(70)
+tr.shape('turtle')
+tr.speed(70)
 R = 30
 for i in range(3, n+1):
-    mnog(i,R)
+    circle(i,R)
     R+=15
